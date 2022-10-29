@@ -1,0 +1,104 @@
+<html>
+	<head>
+	<title>Honda DMS</title>
+	<script language="javascript">
+        function showTimeDate(){
+        cdt=new Date();
+        h=cdt.getHours();
+        m=cdt.getMinutes();
+        s=cdt.getSeconds();
+        tm=h+":"+m+":"+s;
+        document.f1.lblTime.value=tm;
+        setTimeout("showTimeDate",1000);
+        cdt=new Date();
+        d=cdt.getDate();
+        m=cdt.getMonth()+1;
+        y=cdt.getYear()+1900;
+        dt=d+"-"+m+"-"+y;
+        document.f1.lblDate.value=dt;
+    }
+    </script>
+	</head>
+	<body>
+	
+<head>
+<body background="bk5.jpg">
+<body onload="showTimeDate()">
+<form name="f1">
+ <table style="border:1px; height:70px; width:1520px; border-radius:10px;" bgcolor="#3F3A3A">
+<tr>
+<td align="center">
+ <font face="Imprint MT Shadow" size="11" color="#FFFF99"><b>e</b></font><font face="" size="5" color="#FFFFE0"> -</font>
+ <font face="Imprint MT Shadow" size="9" color="#FFFF99"><b>H</b></font><font face="" size="5" color="#FFFFE0">ONDA</font>&nbsp;&nbsp;
+ <font face="Imprint MT Shadow" size="9" color="#FFFF99"><b>D</b></font><font face="" size="5" color="#FFFFE0">MS</font>
+</td>
+</tr>
+</table>
+
+
+<br><br>
+<table border="4" width="50%" align="center" background="a2.jpg" align="center" style="border-radius:20px 0px 20px 0px;border-color:#4E8975">
+<tr>
+<td align="center" style="border-radius:20px 0px 20px 0px"><br>
+<font color="blue" face="Forte" size="6">System Requirement</font><br>
+<table width="600" border="0">
+<tr>
+				<td><font color="Greenish Blue" face="Algerian" size="4">Hardware Specification:</font></td>
+			</tr>
+			<tr>
+				<td>The implementation of the proposed system requires the following hardware specifications.</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	CPU Type	: Pentium or Above.</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	CPU Clock	: 2.6 ghz or above</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c.	RAM		: 1 GB or above</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d.	CD Drive	: Any make</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.	U.P.S.[5 Kv ]: Any Make</td>
+			</tr>
+		<br>
+			<tr>
+				<td><font color="Greenish Blue" face="Algerian" size="4">Software Specification:</font></td>
+			</tr>
+			<tr>
+				<td>The software is designed under the following environment: </td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Language			:  Java EE</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Scripting Language	: HTML, Java Script</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Database			:  SQL-Server</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Operating System	: Windows 7/8</td>
+			</tr>
+			<tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Server			: Tomcat</td>
+			</tr>
+
+</table>
+<br><br>
+</td>
+</tr>
+</table>
+<br><br>
+
+<table style="border:1px; height:50px; width:1520px; border-radius:10px;" bgcolor="#3F3A3A">
+<tr>
+<td>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>

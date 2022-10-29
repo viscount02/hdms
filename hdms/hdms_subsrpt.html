@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Menu Page</title>
+        <script language="javascript">
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="red";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="blue";
+		  }
+		</script>
+  </head>
+  <body background="bk.jpg">
+  <table>
+  
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id1" bgcolor="blue" onmouseover="Hilight('id1')" onmouseout="Normal('id1')" style="border-radius:5px">
+	<a href="edms_rptdealer.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Dealer Information</font></a></td> 
+  </tr>
+  <tr height="26">
+	<td width="220" nowrap="nowrap" id="id2" bgcolor="blue" onmouseover="Hilight('id2')" onmouseout="Normal('id2')" style="border-radius:5px">
+	<a href="edms_rptsubdealer.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">SubDealer Information  </font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id3" bgcolor="blue" onmouseover="Hilight('id3')" onmouseout="Normal('id3')" style="border-radius:5px">
+	<a href="edms_rptvehicle.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Vehicle Information</font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id5" bgcolor="blue" onmouseover="Hilight('id5')" onmouseout="Normal('id5')" style="border-radius:5px">
+	<a href="edms_rptpurvehicle.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Purchase Of Vehicle Info. </font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id7" bgcolor="blue" onmouseover="Hilight('id7')" onmouseout="Normal('id7')" style="border-radius:5px">
+	<a href="edms_rptissue.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Issue Of Vehicle Information </font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id9" bgcolor="blue" onmouseover="Hilight('id9')" onmouseout="Normal('id9')" style="border-radius:5px">
+	<a href="edms_rptpmtvou.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Payment Voucher Information</font></a></td> 
+  </tr>
+  <tr height="26">
+	<td width="220" nowrap="nowrap" id="id10" bgcolor="blue" onmouseover="Hilight('id10')" onmouseout="Normal('id10')" style="border-radius:5px">
+	<a href="edms_rptrecvou.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Receipt Voucher Information </font></a></td> 
+  </tr>
+  </table>
+  </body>
+  </html>

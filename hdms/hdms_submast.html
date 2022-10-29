@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Menu Page</title>
+        <script language="javascript">
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="red";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="blue";
+		  }
+		</script>
+  </head>
+  <body background="bk4.jpg">
+  <table width="200">
+  <tr height="26" >
+	<td width="180" nowrap="nowrap" id="id1" bgcolor="blue" onmouseover="Hilight('id1')" onmouseout="Normal('id1')" style="border-radius:5px">
+	<a href="edms_dealerc.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Dealer Profile</font></a></td> 
+  </tr>
+  <tr height="26">
+	<td width="180" nowrap="nowrap" id="id2" bgcolor="blue" onmouseover="Hilight('id2')" onmouseout="Normal('id2')" style="border-radius:5px">
+	<a href="edms_subdealerc.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">SubDealer Profile</font></a></td> 
+  </tr>
+  <tr height="26" >
+	<td width="180" nowrap="nowrap" id="id3" bgcolor="blue" onmouseover="Hilight('id3')" onmouseout="Normal('id3')" style="border-radius:5px">
+	<a href="edms_vehiclec.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Vehicle Profile</font></a></td> 
+  </tr>
+    </table>
+  </body>
+  </html>

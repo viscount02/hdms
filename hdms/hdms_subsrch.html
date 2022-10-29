@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Menu Page</title>
+        <script language="javascript">
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="red";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="blue";
+		  }
+		</script>
+  </head>
+  <body background="bk.jpg">
+  <table>
+  <tr height="26" >
+	<td width="220" nowrap="nowrap" id="id1" bgcolor="blue" onmouseover="Hilight('id1')" onmouseout="Normal('id1')" style="border-radius:5px">
+	<a href="hdms_rptVehicle_Vehiclec.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2"> Vehicle Profile[Any Vehicle]</font></a></td> 
+     
+   </tr>
+  </table>
+  </body>
+  </html>

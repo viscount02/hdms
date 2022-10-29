@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Menu Page</title>
+        <script language="javascript">
+		var imgs=new Array();
+		imgs[0]="img1.jpg";
+		imgs[1]="img2.jpg";
+		imgs[2]="img3.jpg";
+		imgs[3]="img4.jpg";
+		imgs[4]="img5.jpg";
+		imgs[5]="img6.jpg";
+		imgs[6]="img7.png";
+		imgs[7]="img8.jpg";
+		imgs[8]="img9.jpg";
+		imgs[9]="img10.jpg";
+		imgs[10]="img11.jpg";
+		imgs[11]="img12.jpg";
+		imgs[12]="img13.jpg";
+		imgs[13]="img14.jpg";
+		var i=0;
+		function slideshow()
+		{
+			i=i+1;
+			if(i>13)
+			i=0;
+			document.f1.imgslide.src=imgs[i];
+			setTimeout("slideshow()",2000);
+		}
+		
+		function showTimeDate(){
+         cdt=new Date();
+         h=cdt.getHours();
+         m=cdt.getMinutes();
+         s=cdt.getSeconds();
+         tm=h+":"+m+":"+s;
+         document.f1.lblTime.value=tm;
+         setTimeout("showTimeDate",1000);
+         cdt=new Date();
+         d=cdt.getDate();
+         m=cdt.getMonth()+1;
+         y=cdt.getYear()+1900;
+         dt=d+"-"+m+"-"+y;
+         document.f1.lblDate.value=dt;
+        }
+		
+          function Hilight(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="red";
+          }
+		  function Normal(id)
+		  {
+              cid=document.getElementById(id);
+              cid.style.backgroundColor="blue";
+		  }
+		   function showsearch(id)
+		  {
+              cid=document.getElementById(id);
+			  
+              cid.src="hdms_subsrch.html";
+          }
+		 
+		  function showmast(id)
+		  {
+              cid=document.getElementById(id);
+			  cid.src="hdms_submast.html";
+          }
+		  function showmgmt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="hdms_submgmt.html";
+          }
+		  function showsrpt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="hdms_subsrpt.html";
+          }
+		  function showdrpt(id)
+		  {
+              cid=document.getElementById(id);
+			 
+              cid.src="hdms_subdrpt.html";
+          }
+		  function showadd(id)
+		  {
+              cid=document.getElementById(id);
+			 
+
+              cid.src="hdms_subadd.html";
+          }
+		  
+		 </script>
+  </head>
+  <body background="bk4.jpg" onload="slideshow(),showTimeDate()">
+  
+  <form name="f1">
+   <table width="100%" style1="border:1px; height:70px; width:1520px; border-radius:10px;" bgcolor="#3F3A3A">
+<tr>
+<td align="center">
+ <font face="Imprint MT Shadow" size="11" color="#FFFF99"><b>e</b></font><font face="" size="5" color="#FFFFE0"> -</font>
+ <font face="Imprint MT Shadow" size="9" color="#FFFF99"><b>H</b></font><font face="" size="5" color="#FFFFE0">ONDA</font>&nbsp;&nbsp;
+ <font face="Imprint MT Shadow" size="9" color="#FFFF99"><b>D</b></font><font face="" size="5" color="#FFFFE0">MS</font>
+</td>
+</tr>
+</table>
+ 
+  <table width="100%" height="450">
+  <tr height="30">
+	<td align="center" id="abt" bgcolor="blue" onmouseover="Hilight('abt')" onmouseout="Normal('abt')"><font face="Lucida Console" color="yellow" size="2">
+		<a href="about.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">About</font></a></td>  
+	<td align="center" id="srch" bgcolor="blue" onmouseover="Hilight('srch')" onmouseout="Normal('srch')"onclick1="showsearch('subcontainer')"><font face="Lucida Console" color="yellow" size="2">
+		<a href="odp_RptVehicleVehc.jsp" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Search</font></a></td>
+	<td align="center" id="rch" bgcolor="blue" onmouseover="Hilight('rch')" onmouseout="Normal('rch')"><font face="Lucida Console" color="yellow" size="2">
+		<a href="reach.html" target="_blank" style="text-decoration:none"><font face="Lucida Console" color="yellow" size="2">Reach Us</font></a></td>
+	<td align="center" id="mast" bgcolor="blue" onmouseover="Hilight('mast')" onmouseout="Normal('mast')" onclick="showmast('subcontainer')"><font face="Lucida Console" color="yellow" size="2">Master</font></td>  
+	<td align="center" id="mgmt" bgcolor="blue" onmouseover="Hilight('mgmt')" onmouseout="Normal('mgmt')" onclick="showmgmt('subcontainer')"><font face="Lucida Console" color="yellow" size="2">Management</font></td>  
+	<td align="center" id="srpt" bgcolor="blue" onmouseover="Hilight('srpt')" onmouseout="Normal('srpt')" onclick="showsrpt('subcontainer')"><font face="Lucida Console" color="yellow" size="2">Summary Report</font></td>  
+	<td align="center" id="drpt" bgcolor="blue" onmouseover="Hilight('drpt')" onmouseout="Normal('drpt')" onclick="showdrpt('subcontainer')"><font face="Lucida Console" color="yellow" size="2">Detailed Report</font></td>  
+  </tr>
+  <tr height="320">
+	<td colspan="3">
+	<iframe id="subcontainer" width="250" height="410" src="ifrm.html"></iframe></td>
+    <td colspan="5"><img src="pic1.jpg" border="2" name="imgslide" width="1000" height="410"></td>
+  </tr>
+  </table>
+ 
+
+<table style="border:1px; height:50px; width:100%; border-radius:10px;" bgcolor="#3F3A3A">
+<tr>
+<td><font color="white">Designed & Developed By : Sumit, Aditya & Mrutyunjay</font>
+</td>
+</tr>
+</table>
+  
+  </form>
+  </body>
+  </html>
